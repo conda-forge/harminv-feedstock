@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About harminv
 =============
 
@@ -18,9 +14,55 @@ Summary: Harmonic inversion algorithm of Mandelshtam - decompose signal into sum
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/harminv-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/harminv-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/harminv-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/harminv-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+
+<table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=408&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/harminv-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=408&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/harminv-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_fortran_compiler_version4</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=408&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/harminv-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version4" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_fortran_compiler_version7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=408&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/harminv-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version7" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td>Windows</td>
+    <td>
+      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
+    </td>
+  </tr>
+![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
+</table>
 
 Current release info
 ====================
