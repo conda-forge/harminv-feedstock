@@ -8,17 +8,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/stevengj/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/NanoComp/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1004
+  number: 1005
   skip: True  # [win]
 
 requirements:
   build:
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
+    - make
   host:
     - libblas
     - libcblas
@@ -30,12 +31,12 @@ test:
     - test -f ${PREFIX}/lib/libharminv${SHLIB_EXT}  # [unix]
 
 about:
-  home: http:/github.com/stevengj/harminv
-  license: GPL-2.0
+  home: https://github.com/NanoComp/harminv
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: Harmonic inversion algorithm of Mandelshtam - decompose signal into sum of decaying sinusoids
-  doc_url: http://harminv.readthedocs.io
-  dev_url: https://github.com/stevengj/harminv
+  #doc_url: https://harminv.readthedocs.io
+  dev_url: https://github.com/NanoComp/harminv
 
 extra:
   recipe-maintainers:
