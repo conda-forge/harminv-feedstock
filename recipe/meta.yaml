@@ -22,7 +22,6 @@ requirements:
     - make
   host:
     - mkl
-    - liblapack
   run:
 
 test:
