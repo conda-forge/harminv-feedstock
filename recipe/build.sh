@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./configure --prefix="${PREFIX}" --enable-shared --with-blas=mkl
+./configure --prefix="${PREFIX}" --enable-shared
 make
 make check
 make install
