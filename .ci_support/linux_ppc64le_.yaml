@@ -12,11 +12,10 @@ fortran_compiler:
 - gfortran
 fortran_compiler_version:
 - '8'
-libblas:
-- 3.8 *netlib
-libcblas:
-- 3.8 *netlib
-liblapack:
-- 3.8.0 *netlib
+mkl:
+- '2019'
+pin_run_as_build:
+  mkl:
+    max_pin: x
 target_platform:
 - linux-ppc64le
