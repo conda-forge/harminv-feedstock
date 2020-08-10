@@ -21,9 +21,8 @@ requirements:
     - {{ compiler('c') }}
     - make
   host:
-    - libblas
-    - libcblas
-    - liblapack
+    - openblas
+    - nomkl
   run:
 
 test:
