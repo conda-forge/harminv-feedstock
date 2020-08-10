@@ -21,8 +21,8 @@ requirements:
     - {{ compiler('c') }}
     - make
   host:
-    - openblas  # [ linux ]
-    - openblas  # [ osx ]
+    - openblas
+    - nomkl
   run:
 
 test:
