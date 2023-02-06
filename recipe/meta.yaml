@@ -1,6 +1,6 @@
 {% set name = "harminv" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "e1b923c508a565f230aac04e3feea23b888b47d8e19b08816a97ee4444233670" %}
+{% set version = "1.4.2" %}
+{% set sha256 = "5a9a1bf710972442f065d0d62c62d0c4ec3da4a3696d7160a35602c9470bc7a2" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1007
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
