@@ -1,24 +1,23 @@
-{% set name = "harminv" %}
 {% set version = "1.4.2" %}
-{% set sha256 = "5a9a1bf710972442f065d0d62c62d0c4ec3da4a3696d7160a35602c9470bc7a2" %}
 
 package:
-  name: {{ name|lower }}
+  name: harminv
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/NanoComp/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/NanoComp/harminv/releases/download/v{{ version }}/harminv-{{ version }}.tar.gz
+  sha256: 5a9a1bf710972442f065d0d62c62d0c4ec3da4a3696d7160a35602c9470bc7a2
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
+    - gnuconfig  # [unix]
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - make
   host:
     - libblas
