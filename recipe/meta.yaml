@@ -9,7 +9,7 @@ source:
   sha256: 5a9a1bf710972442f065d0d62c62d0c4ec3da4a3696d7160a35602c9470bc7a2
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -39,5 +39,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - ChristopherHogan
     - oskooi
