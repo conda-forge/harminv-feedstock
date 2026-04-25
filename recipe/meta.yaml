@@ -1,4 +1,4 @@
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 
 package:
   name: harminv
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/NanoComp/harminv/releases/download/v{{ version }}/harminv-{{ version }}.tar.gz
-  sha256: 5a9a1bf710972442f065d0d62c62d0c4ec3da4a3696d7160a35602c9470bc7a2
+  sha256: 883b29a126bd5ba00ccf804b986e568980d39a53ec8f86ae05a43ca6c107cc38
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
 
 requirements:
